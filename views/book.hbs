@@ -1,0 +1,23 @@
+
+<a href="/api/logout" class="btn btn-primary ">Log out</a>
+<a href="/api/addBook" class="btn btn-primary float-end">Add book</a>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">tiêu đề</th>
+      <th scope="col">tác giả</th>
+      <th scope="col">nhà xuất bản</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each element}}
+     <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td >{{this.title}}</td>
+      <td>{{this.author}}</td>
+      <td>{{this.publisher}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

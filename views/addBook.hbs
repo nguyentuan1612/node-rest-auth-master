@@ -1,0 +1,26 @@
+<a href="/api/book" class="btn btn-primary float-end">Back</a>
+    <p>ADD BOOK</p>
+<form action="/api/addBook" method="POST">
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example1">title</label>
+    <input type="text" class="form-control" name="title" required/>
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example2">author</label>
+    <input type="text"  class="form-control" name="author" required/>
+  </div>
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example2">publisher</label>
+    <input type="text"  class="form-control" name="publisher" required/>
+  </div>
+  <div class="form-outline mb-4">
+    <label class="form-label" for="form2Example2">isbn</label>
+    <input type="number" min="1"  class="form-control" name="isbn" required/>
+  </div>
+
+  <div class="form-outline mb-4 mt-3">
+    <button style="width: 100%;" class="btn btn-primary" type="submit">ADD BOOK</button>
+    </div>
+</form>
